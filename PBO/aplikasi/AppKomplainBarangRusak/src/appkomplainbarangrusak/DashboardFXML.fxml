@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="529.0" prefWidth="639.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appkomplainbarangrusak.MainFXMLController">
+   <children>
+      <Label layoutX="185.0" layoutY="14.0" text="Komplain Barang Rusak" textFill="#052ec3">
+         <font>
+            <Font name="Bell MT" size="28.0" />
+         </font>
+      </Label>
+      <Line endX="311.0" layoutX="213.0" layoutY="49.0" startX="-99.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" proportional="false">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="0.05747126436781609" />
+                  <Stop color="BLACK" offset="0.27586206896551724" />
+                  <Stop color="WHITE" offset="0.7318007662835249" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke></Line>
+      <Label layoutX="89.0" layoutY="119.0" text="Nama Lengkap">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="151.0" text="Nama Toko">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfnamalengkap" layoutX="237.0" layoutY="116.0" prefHeight="25.0" prefWidth="290.0" />
+      <TextField fx:id="tfnamatoko" layoutX="237.0" layoutY="148.0" prefHeight="25.0" prefWidth="290.0" />
+      <TextField fx:id="tfnamabarang" layoutX="237.0" layoutY="179.0" prefHeight="25.0" prefWidth="290.0" />
+      <Label layoutX="89.0" layoutY="182.0" text="Nama Barang">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="213.0" text="Tipe Barang">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbElektronik" layoutX="237.0" layoutY="214.0" mnemonicParsing="false" text="Elektronik" />
+      <RadioButton fx:id="rbNonElektronik" layoutX="237.0" layoutY="238.0" mnemonicParsing="false" text="Non-Elektronik" />
+      <Label layoutX="89.0" layoutY="266.0" text="Tgl Order ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpTglOrder" layoutX="237.0" layoutY="263.0" />
+      <Label layoutX="90.0" layoutY="305.0" text="Keluhan ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="takeluhan" layoutX="237.0" layoutY="305.0" prefHeight="144.0" prefWidth="290.0" />
+      <Button fx:id="btnkirim" layoutX="475.0" layoutY="462.0" mnemonicParsing="false" text="Kirim" />
+      <Button id="btn_batal" fx:id="btnbatal" layoutX="411.0" layoutY="462.0" mnemonicParsing="false" text="Batal" />
+      <Label layoutX="89.0" layoutY="87.0" text="ID pengguna">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfid" layoutX="237.0" layoutY="84.0" prefHeight="25.0" prefWidth="290.0" />
+   </children>
+</AnchorPane>
