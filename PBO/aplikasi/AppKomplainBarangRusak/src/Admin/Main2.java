@@ -33,7 +33,6 @@ public class Main2 extends Application{
     }
 }
     
-    
     public static void main(String[] args) {
         launch(args);
     }
