@@ -17,15 +17,15 @@
             </Label>
          </children>
       </AnchorPane>
-      <TableView layoutX="6.0" layoutY="74.0" prefHeight="318.0" prefWidth="866.0">
+      <TableView fx:id="table" layoutX="6.0" layoutY="74.0" prefHeight="318.0" prefWidth="866.0">
         <columns>
-          <TableColumn prefWidth="113.0" text="Nama Pengguna" />
-          <TableColumn prefWidth="107.0" text="Nama Toko" />
-          <TableColumn prefWidth="117.0" text="Nama Barang" />
-          <TableColumn prefWidth="124.0" text="Tipe Barang" />
-          <TableColumn prefWidth="127.0" text="Tanggal Order" />
-          <TableColumn prefWidth="156.0" text="Keluhan" />
-          <TableColumn prefWidth="121.0" text="Aksi" />
+          <TableColumn fx:id="tblNamaPengguna" prefWidth="113.0" text="Nama Pengguna" />
+          <TableColumn fx:id="tblNamaToko" prefWidth="107.0" text="Nama Toko" />
+          <TableColumn fx:id="tblNamaBarang" prefWidth="117.0" text="Nama Barang" />
+          <TableColumn fx:id="tblTipeBarang" prefWidth="124.0" text="Tipe Barang" />
+          <TableColumn fx:id="tblTglOrder" prefWidth="127.0" text="Tanggal Order" />
+          <TableColumn fx:id="tblKeluhan" prefWidth="156.0" text="Keluhan" />
+          <TableColumn fx:id="tblAksi" prefWidth="121.0" text="Aksi" />
         </columns>
       </TableView>
    </children>
