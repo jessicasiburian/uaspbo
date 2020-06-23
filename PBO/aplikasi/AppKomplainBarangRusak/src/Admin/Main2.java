@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package appkomplainbarangrusak;
+package Admin;
 
+import Pengkomplain.*;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
@@ -17,7 +18,7 @@ import javafx.stage.Stage;
  *
  * @author ITD
  */
-public class Main extends Application{
+public class Main2 extends Application{
     
     @Override
     public void start(Stage stage) throws Exception {

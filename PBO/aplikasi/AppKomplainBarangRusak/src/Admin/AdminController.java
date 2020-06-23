@@ -1,4 +1,4 @@
-package appkomplainbarangrusak;
+package Admin;
 
 import java.net.URL;
 import java.util.ResourceBundle;

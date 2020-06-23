@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package appkomplainbarangrusak;
+package Admin;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -61,7 +61,7 @@ public class Login {
     
 
     private void ambildata() throws FileNotFoundException, IOException{
-        FileInputStream input = new FileInputStream("./src/txt/user.txt");
+        FileInputStream input = new FileInputStream("./src/Admin/user.txt");
         byte[] byten = new byte[1100];
         input.read(byten);
         String converString = new String(byten).trim();

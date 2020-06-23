@@ -1,4 +1,4 @@
-package appkomplainbarangrusak;
+package Admin;
 
 import Utility.MakeAlert;
 import java.io.BufferedReader;
@@ -47,7 +47,7 @@ public class LoginFXMLController implements Initializable{
                     if(login.login()){
                         Stage stage = (Stage) btnLogin.getScene().getWindow();
                         stage.close();
-                        Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+                        Parent root = FXMLLoader.load(getClass().getResource("AdminFXML.fxml"));
                         Scene scene = new Scene(root);
                         stage.setScene(scene);
                         stage.show();
